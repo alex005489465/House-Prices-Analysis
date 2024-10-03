@@ -1,5 +1,7 @@
 # Object file
 *.o
 
-# Ada Library Information
-*.ali
+# Library Information
+*.ipynb
+*.zip
+random_forest_model_HousePrice.pkl
