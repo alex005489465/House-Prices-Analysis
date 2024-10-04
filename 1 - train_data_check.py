@@ -22,4 +22,8 @@ print(columns_info)
 data_types_count = data_train.dtypes.value_counts()
 print(data_types_count)
 
+# 看資料的欄位資訊
+print(data_train.info())
 
+# 看數值欄位的統計值
+print(data_train.describe())
