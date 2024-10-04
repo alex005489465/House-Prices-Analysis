@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # %%
 # 讀取CSV檔案
@@ -27,3 +28,7 @@ print(data_train.info())
 
 # 看數值欄位的統計值
 print(data_train.describe())
+
+# 捨去'Id'欄並畫出各欄的直方圖
+data_train.drop(columns=['Id']).hist(bins=500, figsize=(20,15))
+plt.show()
